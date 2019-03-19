@@ -1,0 +1,108 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1552963629827" stop="1552963629934">
+  <name>test_01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1552963629827" status="passed" stop="1552963629830">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="16184-MainThread"/>
+        <label name="host" value="MS-20160719EJCM"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963629830" status="passed" stop="1552963629830">
+          <name>正在执行登录用例</name>
+          <title>正在执行登录用例</title>
+          <attachments>
+            <attachment source="ee03ece5-08a1-42ad-87e1-b1cfe584cf74-attachment.txt" title="输入用户名" type="text/plain"/>
+            <attachment source="e7b4b564-b4a4-4dbc-9652-bbf389dbc608-attachment.txt" title="输入密码" type="text/plain"/>
+            <attachment source="bc613b9d-25b1-4529-84a1-48afb41cb837-attachment.txt" title="点击登录" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552963629837" status="passed" stop="1552963629839">
+      <name>Test01.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="16184-MainThread"/>
+        <label name="host" value="MS-20160719EJCM"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963629839" status="passed" stop="1552963629839">
+          <name>正在注册用例</name>
+          <title>正在注册用例</title>
+          <attachments>
+            <attachment source="7749de17-3b60-4f69-b88c-506109e29556-attachment.txt" title="输入用户名" type="text/plain"/>
+            <attachment source="d72e890f-b614-471e-b8ab-c4e96a78bbcc-attachment.txt" title="输入密码" type="text/plain"/>
+            <attachment source="9ba44423-102f-4e72-9bdb-2b04d4f413c4-attachment.txt" title="输入验证码" type="text/plain"/>
+            <attachment source="0fc62e83-4687-47cd-8b9b-1fbb93cc77eb-attachment.txt" title="点击登录" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552963629848" status="failed" stop="1552963629929">
+      <name>Test01.test003</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_01.Test01 object at 0x03336430&gt;
+
+    @allure.step("失败截图")
+    @allure.severity("critical")
+    def test003(self):
+        with open("./img/fail.png", "rb") as f:
+            allure.attach("失败原因:", f.read(), allure.attach_type.PNG)
+            print("test003被执行")
+&gt;           assert 0
+E           assert 0
+
+scripts\test_01.py:27: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="16184-MainThread"/>
+        <label name="host" value="MS-20160719EJCM"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963629849" status="failed" stop="1552963629852">
+          <name>失败截图</name>
+          <title>失败截图</title>
+          <attachments>
+            <attachment source="e4c8cddd-3f4d-44ad-9f86-60dd4394f604-attachment.png" title="失败原因:" type="image/png"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552963629933" status="passed" stop="1552963629934">
+      <name>Test01.test004</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="16184-MainThread"/>
+        <label name="host" value="MS-20160719EJCM"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963629934" status="passed" stop="1552963629934">
+          <name>级别被执行</name>
+          <title>级别被执行</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
